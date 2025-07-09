@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Converter - Convert Text to Any Case</title>
+    <meta name="description" content="Free online text case converter tool. Convert text to uppercase, lowercase, title case, camelCase, snake_case, and more instantly.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">TextConverter</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <section class="hero">
+            <div class="container">
+                <h1>Text Case Converter</h1>
+                <p class="hero-subtitle">Transform your text instantly with our powerful case conversion tool</p>
+            </div>
+        </section> -->
+
+        <section class="converter-section">
+            <div class="container">
+                <div class="converter-card">
+                    <div class="input-section">
+                        <label for="textInput" class="sr-only">Enter your text here</label>
+                        <textarea 
+                            id="textInput" 
+                            placeholder="Enter your text here..."
+                            rows="6"
+                        ></textarea>
+                        <div class="input-stats">
+                            <span id="charCount">0 characters</span>
+                            <span id="wordCount">0 words</span>
+                        </div>
+                    </div>
+
+                    <div class="buttons-grid">
+                        <button class="convert-btn" data-case="upper">UPPERCASE</button>
+                        <button class="convert-btn" data-case="lower">lowercase</button>
+                        <button class="convert-btn" data-case="title">Title Case</button>
+                        <button class="convert-btn" data-case="sentence">Sentence case</button>
+                        <button class="convert-btn" data-case="camel">camelCase</button>
+                        <button class="convert-btn" data-case="pascal">PascalCase</button>
+                        <button class="convert-btn" data-case="snake">snake_case</button>
+                        <button class="convert-btn" data-case="kebab">kebab-case</button>
+                        <button class="convert-btn" data-case="constant">CONSTANT_CASE</button>
+                        <button class="convert-btn" data-case="alternating">aLtErNaTiNg CaSe</button>
+                        <button class="convert-btn" data-case="inverse">iNVERSE cASE</button>
+                        <button class="convert-btn" data-case="random">RaNdOm CaSe</button>
+                    </div>
+
+                    <div class="output-section">
+                        <div class="output-header">
+                            <label for="textOutput">Converted Text:</label>
+                            <button id="copyBtn" class="copy-btn" title="Copy to clipboard">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <textarea 
+                            id="textOutput" 
+                            readonly
+                            rows="6"
+                            placeholder="Converted text will appear here..."
+                        ></textarea>
+                    </div>
+
+                    <div class="utility-buttons">
+                        <button id="clearBtn" class="utility-btn">Clear All</button>
+                        <button id="swapBtn" class="utility-btn">Swap Text</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose Our Text Case Converter?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Convert text instantly with real-time processing. No waiting, no delays.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>100% Private</h3>
+                        <p>All conversions happen in your browser. Your text never leaves your device.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Works perfectly on all devices - desktop, tablet, and mobile.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🆓</div>
+                        <h3>Completely Free</h3>
+                        <p>No registration, no limits, no hidden fees. Use it as much as you want.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container">
+                <h2>About Text Case Conversion</h2>
+                <p>Text case conversion is essential for developers, writers, and content creators. Whether you're formatting code variables, creating consistent headings, or preparing text for different platforms, our tool makes it effortless.</p>
+                <p>From simple uppercase and lowercase transformations to specialized formats like camelCase and snake_case, we support all the text cases you need for any project.</p>
+                <a href="about.html" class="cta-link">Learn more about our tool →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TextConverter</h4>
+                    <p>The ultimate text case conversion tool for developers and writers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TextConverter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
