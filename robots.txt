@@ -1,5 +1,5 @@
 # Robots.txt for TextConverter - Text Case Converter Tool
-# https://bipinemp.github.io/textcaseconverter/robots.txt
+# https://text-caseconverter.netlify.app/robots.txt
 
 User-agent: *
 Allow: /
